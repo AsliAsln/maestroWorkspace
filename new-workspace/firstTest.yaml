@@ -1,18 +1,17 @@
 appId: com.pozitron.hepsiburada
 ---
-# 1. Hepsiburada ana sayfası açılır
+
 - launchApp:
     clearState: true
 
-# 2. Arama alanına "Adidas ayakkabı" yazılır ve arama yapılır
+#Arama alanına "Adidas ayakkabı" yazılır ve arama yapılır
 - setClipboard: "Adidas ayakkabı"
 - tapOn: "Ürün, kategori veya marka ara"
 - pasteText
 - pressKey: Enter
 
-# 3. Ürün listeleme sayfasının açıldığını doğrula (Filtrele butonu görünür olmalı)
 
-# 4 & 5. Filtreler alanına girilir ve seçimler yapılır
+#Filtreler alanına girilir ve seçimler yapılır
 - tapOn:
     point: 1%,38%
 
@@ -42,7 +41,7 @@ appId: com.pozitron.hepsiburada
 
 - assertVisible: Filtrele
 
-# Fiyat Aralığı: 3.000 TL – 5.000 TL
+#3.000 TL – 5.000 TL
 - tapOn: "Fiyat Aralığı"
 - tapOn: "En az"
 - inputText: "3000"
@@ -50,21 +49,21 @@ appId: com.pozitron.hepsiburada
 - inputText: "5000"
 - tapOn: "Uygula"
 
-# 6 & 7. Filtrelerin uygulandığını doğrula
+#Filtrelerin uygulandığını doğrula
 - assertVisible: "Erkek"
 - assertVisible: "Beyaz"
 - tapOn:
     id: btnApply
 
-# 8. Listelenen ürünlerden herhangi biri seçilir (İlk sıradaki ürün)
+#Listelenen ürünlerden herhangi biri seçilir (İlk sıradaki ürün)
 - tapOn:
     index: 0
     id: "productBoxImage" # Ürün görseline tıkla
 
-# 9. Ürün detay sayfasında "Sepete Ekle" butonuna tıklanır
+#Ürün detay sayfasında "Sepete Ekle" butonuna tıklanır
 - tapOn: "Sepete Ekle"
 
-# 10. Kullanıcı login olmadan sepete yönlendirilir
+#Kullanıcı login olmadan sepete yönlendirilir
 - tapOn: "Sepete git"
 
 # 11. Sepet sayfasında doğrulamalar
