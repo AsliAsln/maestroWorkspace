@@ -1,0 +1,4 @@
+appId: com.pozitron.hepsiburada
+---
+- assertVisible: "Sepete git"
+- tapOn: "Sepete git"

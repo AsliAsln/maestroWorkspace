@@ -1,0 +1,4 @@
+appId: com.pozitron.hepsiburada
+---
+- launchApp:
+    clearState: true

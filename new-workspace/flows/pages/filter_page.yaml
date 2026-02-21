@@ -1,0 +1,52 @@
+appId: com.pozitron.hepsiburada
+---
+# Filtre ikonuna tıkla (PLP üst bar - koordinat bazlı)
+
+- doubleTapOn:
+    point: 4%,11%
+
+# Filtre paneli açıldı doğrula
+- assertVisible: "Filtrele"
+
+# Cinsiyet  Erkek
+- tapOn: "Cinsiyet"
+- tapOn: ${FILTER_GENDER}
+- tapOn: "Uygula"
+- assertVisible: "Filtrele"
+
+# Renk  Beyaz
+- tapOn: "Renk"
+
+- scrollUntilVisible:
+    element:
+      text: ${FILTER_COLOR}
+    direction: DOWN
+
+- tapOn: ${FILTER_COLOR}
+- tapOn: "Uygula"
+- assertVisible: "Filtrele"
+
+# Beden  42
+- tapOn: "Beden"
+
+- scrollUntilVisible:
+    element:
+      text: ${FILTER_SIZE}
+    direction: DOWN
+
+- tapOn: ${FILTER_SIZE}
+- tapOn: "Uygula"
+- assertVisible: "Filtrele"
+
+# Fiyat Aralığı  3000 - 5000 TL
+- tapOn: "Fiyat Aralığı"
+
+- tapOn: "En az"
+- eraseText
+- inputText: ${FILTER_PRICE_MIN}
+
+- tapOn: "En çok"
+- eraseText
+- inputText: ${FILTER_PRICE_MAX}
+
+- tapOn: "Uygula"

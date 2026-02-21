@@ -1,0 +1,19 @@
+appId: com.pozitron.hepsiburada
+---
+# Aktif filtreleri doğrula
+- assertVisible: ${FILTER_GENDER}
+- assertVisible: ${FILTER_COLOR}
+- assertVisible: ${FILTER_PRICE_MIN} - ${FILTER_PRICE_MAX} TL
+
+# Filtreleri onayla
+- doubleTapOn:
+    id: "btnApply"
+
+# ürün listelendi mi hiç
+- assertVisible:
+    id: "productBoxImage"
+
+# İlk ürünü seç
+- tapOn:
+    id: "productBoxImage"
+    index: 0

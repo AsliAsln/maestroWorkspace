@@ -1,0 +1,22 @@
+appId: com.pozitron.hepsiburada
+---
+- runFlow:
+    file: ../flows/pages/home_page.yaml
+
+- runFlow:
+    file: ../flows/pages/search_page.yaml
+
+- runFlow:
+    file: ../flows/pages/filter_page.yaml
+
+- runFlow:
+    file: ../flows/pages/product_listing_page.yaml
+
+- runFlow:
+    file: ../flows/pages/product_detail_page.yaml
+
+- runFlow:
+    file: ../flows/pages/login_handler.yaml
+
+- runFlow:
+    file: ../flows/pages/cart_page.yaml

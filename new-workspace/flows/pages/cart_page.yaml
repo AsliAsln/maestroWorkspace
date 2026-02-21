@@ -1,0 +1,3 @@
+appId: com.pozitron.hepsiburada
+---
+- assertVisible: "Sepetim"

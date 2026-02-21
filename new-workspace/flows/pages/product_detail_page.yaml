@@ -1,0 +1,9 @@
+appId: com.pozitron.hepsiburada
+---
+- scrollUntilVisible:
+    element:
+      text: "Sepete Ekle"
+    direction: DOWN
+
+- assertVisible: "Sepete Ekle"
+- tapOn: "Sepete Ekle"

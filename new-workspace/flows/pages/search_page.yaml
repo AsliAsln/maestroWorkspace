@@ -1,0 +1,9 @@
+appId: com.pozitron.hepsiburada
+---
+- setClipboard: ${SEARCH_QUERY}
+- tapOn: ${SEARCH_PLACEHOLDER}
+- pasteText
+- pressKey: Enter
+
+- assertVisible:
+    id: "productBoxImage"
