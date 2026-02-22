@@ -50,11 +50,6 @@ Test, aşağıdaki environment değişkenleri ile parametrik olarak çalışır:
 | `FILTER_PRICE_MAX` | Maksimum fiyat | `5000` |
 | `PRODUCT_NAME` | Sepette doğrulanacak ürün adı | `copyTextFrom ile otomatik atanır` |
 
-### Environment Ayarları
-
-<p align="center">
-  <img src="assets/environment_settings.png" alt="Environment Settings" width="600"/>
-</p>
 
 ## 🚀 Kurulum & Çalıştırma
 
@@ -104,6 +99,13 @@ https://github.com/user-attachments/assets/8de46dd5-8e58-4cf9-a70c-642db1d22256
 | `pressKey` | Klavye tuşuna basma |
 | `copyTextFrom` | Element metnini değişkene kaydetme |
 | `runFlow` | Alt akışları çalıştırma |
+
+
+
+
+
+https://github.com/user-attachments/assets/bb858810-3642-4e3b-961a-687a3341e6b2
+
 
 
 
